@@ -1,580 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Luke Cross Online Portfolio">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Portfolio website for Luke Cross.">
     <meta name="author" content="Luke Cross">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title>A Computer Science Student</title>
+    <title>Luke Cross - Software Developer</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/icomoon.css">
-    <link href="assets/css/animate-custom.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
 
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    
-    <script src="assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
 
-  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-  
-  
-  	<div id="navbar-main">
-      <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon icon-menu" style="font-size:30px; color:#3498db;"></span>
-          </button>
-          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-menu" style="font-size:18px; color:#3498db;"></span></a>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$ ( "#menu-close").click();>Luke Cross</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$ ( "#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$ ( "#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#skills" onclick=$ ( "#menu-close").click();>Skills</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$ ( "#menu-close").click();>Projects</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$ ( "#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Luke Cross</h1>
+            <h3>Software Developer</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Who Am I?</a>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#home" class="smoothScroll">Home</a></li>
-			<li> <a href="#about" class="smoothScroll"> About</a></li>
-			<li> <a href="#education" class="smoothScroll"> Education</a></li>
-			<li> <a href="#work" class="smoothScroll"> Work</a></li>
-			<li> <a href="#projects" class="smoothScroll"> Projects</a></li>
-			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-    </div>
+    </header>
 
-  
-  
-		<!-- ==== HEADERWRAP ==== -->
-	    <div id="headerwrap" id="home" name="home">
-			<header class="clearfix">
-	  		 		<h1><span class="icon icon-command"></span></h1>
-	  		 		<p>Luke Cross</p>
-	  		 		<p>A Computer Science Student</p>
-	  		</header>	    
-	    </div><!-- /headerwrap -->
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>University of Birmingham, Computer Science Graduate.</h2>
+                    <p class="lead">Graduated class of 2016 with a First Class Honours Degree in Computer Science with Year in Industry BSc.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
-		<!-- ==== GREYWRAP ==== -->
-		<div id="greywrap">
-			<div class="row">
-				<div class="col-lg-4 callout">
-					<span class="icon icon-checkbox-checked"></span>
-					<h2>Approachable</h2>
-					<p>Enthusiatic, friendly and approachable. Through experience working in industry and in retail, I have always ensured that I am easy to approach. </p>
-				</div><!-- col-lg-4 -->
-				
-				<div class="col-lg-4 callout">
-					<span class="icon icon-checkbox-checked"></span>
-					<h2>Hard-Working</h2>
-					<p>Dedicated student who loves to try new things, learn new technologies and love to be pushed outside my comfort zone. </p>
-				</div><!-- col-lg-4 -->	
-					
-				<div class="col-lg-4 callout">
-					<span class="icon icon-checkbox-checked"></span>
-					<h2>Motivated</h2>
-					<p>A years industry experience (Microsoft). On track for a First Class degree with achieving a First in both first and second years at University. </p>
-				</div><!-- col-lg-4 -->
-			</div><!-- row -->
-		</div><!-- greywrap -->
-		
-		<!-- ==== ABOUT ==== -->
-		<div class="container" id="about" name="about">
-			<div class="row white">
-			<br>
-				<h1 class="centered">ABOUT ME.</h1>
-				<hr>
-				
-				<div class="col-lg-12">
-					<p>First class Computer Science Undergraduate studying at the University of Birmingham; looking to
-					develop a challenging and exciting career in Technology.
-					An enthusiastic student who is hard working and determined to do well. A well-organised and reliable
-					person who is always happy to help others and always ready to try something new. A great team player,
-					easy to talk to and to approach, with a great work ethic. A fast learner with great communication and
-					problem-solving skills who is always quick to fit in and excel in everything I do. </p>
-				</div><!-- col-lg-12 -->
-			</div><!-- row -->
-			<div class="row">
-				<div class="progress">
-		            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-		            </div>
-		            <span class="progress-type">C#</span>
-		            <span class="progress-completed">70%</span>
-		        </div>
-		        <div class="progress">
-		            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-		            </div>
-		            <span class="progress-type">HTML/HTML 5, CSS, XML, Javascript</span>
-		            <span class="progress-completed">80%</span>
-		        </div>
-				<div class="progress">
-		            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">  
-		            </div>
-		            <span class="progress-type">Java</span>
-		            <span class="progress-completed">80%</span>
-		        </div>
-				<div class="progress">
-		            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-		            </div>
-		            <span class="progress-type">Microsoft Office Core Programs</span>
-		            <span class="progress-completed">80%</span>
-		        </div>
-		        <div class="progress">
-		            <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-		            </div>
-		            <span class="progress-type">Python</span>
-		            <span class="progress-completed">60%</span>
-		        </div>
-		        <div class="progress">
-		            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-		            </div>
-		            <span class="progress-type">SQL, JDBC</span>
-		            <span class="progress-completed">70%</span>
-		        </div>
-			</div>
-		</div><!-- container -->
-		
-		<!-- ==== SECTION DIVIDER1 -->
-		<section class="section-divider textdivider divider1">
-			<div class="container">
-				<h1>I LOVE WHAT I DO</h1>
-				<hr>
-				<p>I love what I do. With a keen interest in Computer Science, I enjoy experimenting with new technologies. </p>
-			</div><!-- container -->
-		</section><!-- section -->
-		
-		
-		<!-- ==== EDUCATION ==== -->
-		<div class="container" id="education" name="education">
-			<br>
-			<br>
-			<div class="row">
-				<div class="col-md-9">
-				<h2>UNIVERSITY OF BIRMINGHAM</h2>
-				<br>
-					<p>2012 - 2016.</p>
-					<p>Computer Science with Year in Industry Bsc.</p>
-					<p>I am studying towards a first class degree in Computer Science from the University of Birmingham. I have currently completed my second year of study achieving an 84% average, with modules such as: Software Workshop (Java) - 95%, Team Project (Java Game) - 94%, Introduction to Artificial Intelligence - 92%, Mathematical Techniques for Computer Science - 92%.
-						<div class="col-md-6">
-							<p>First Year Modules</p>
-							<br>• Software Workshop
-							<br>• Foundations of Computer Science
-							<br>• Impact of Maths
-							<br>• Intro to Artificial Intelligence
-							<br>• Intro to Software Engineering
-							<br>• Information and the Web
-							<br>• Robot Programming
-							<br>• Language and Logic
-						</div>
-						<div class="col-md-6">
-							<p>Second Year Modules</p>
-							<br>• Team Project
-							<br>• Software Engineering
-							<br>• Functional Programming
-							<br>• Intro to Computer Security
-							<br>• Computer Systems and Architecture
-							<br>• Models of Computation
-							<br>• Mathematical Techniques of Computer Science
-							<br>• Professional Computing
-							<br>• C/C++
-							<br>• Software Sytems
-						</div>
-				</div>
-				<div class="col-md-3">
-				<h2>THEALE GREEN</h2>
-				<br>
-				<p>2010 - 2012.</p><!-- col -->
-				<p>Computing, Maths, Product Design, History.</p>
-				<p>During my time at Theale Green Sixth Form I undertook 3 A2 levels and 1 AS level.</p>
-				<div class="col-md-12">
-							<p>A Level</p>
-							<br>• Computing - A
-							<br>• Maths - A
-							<br>• Product Design - B
-							<br>• History - B (AS Level)
-				</div>
-			</div>
-			</div><!-- row -->
-		</div><!-- container -->
-  		
+    <!-- Skills -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="skills" class="skills bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Technical Skills</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="skill-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-coffee fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Java</strong>
+                                </h4>
+                                <p>3 Years Experience</p>
+                                <div class="progress">
+		                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+		                        </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="skill-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-code fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>C#</strong>
+                                </h4>
+                                <p>2 Years Experience</p>
+                                <div class="progress">
+		                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+		                        </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="skill-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-globe fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>HTML, CSS, JS</strong>
+                                </h4>
+                                <p>2 Years Experience</p>
+                                <div class="progress">
+		                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+		                        </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="skill-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-terminal fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Python</strong>
+                                </h4>
+                                <p>1 Year Experience</p>
+                                <div class="progress">
+		                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+		                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
-		<!-- ==== SECTION DIVIDER2 -->
-		<section class="section-divider textdivider divider2">
-			<div class="container">
-				<h1>I LOVE LEARNING NEW THINGS</h1>
-				<hr>
-				<p>I love learning new things that I can apply to what I do. Whether it be to improve an existing skill or develop a new one.</p>
-			</div><!-- container -->
-		</section><!-- section -->
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>My Projects</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="" data-toggle="modal" data-target="#portfolioModal-1">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                                <!-- Modal -->
+                                <div id="portfolioModal-1" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
 
-		<!-- ==== WORK ==== -->
-		<div class="container" id="work" name="work">
-		<br>
-			<div class="row white centered">
-				<h1 class="centered">SO WHAT WORK EXPERIENCE HAVE I GOT?</h1>
-				<hr>
-			</div>
-			<div class="row">
-				<div class="col-md-8">
-					<br>
-					<h4><b>Software Development Engineer in Test</b></h4>
-					<p>Working as an SDET I was able to experience very varied work during my internship with all effort going 
-						towards benefiting the Test department in the studio. Some of the work I undertook during my internship is as follows:
-					<br>• Creating automation that captures the state of the game at different points in order for QA teams to review.
-					<br>• A hub for developers and artists to see the different states in the game.
-					<br>• Working with different teams in the studio to create dashboards that display: data about Test in the studio (bug numbers, leader board of developers with the most bugs, test coverage etc.), data about Production status (milestones, blocked tasks, task progress etc.)
-					<br>• Automating quality assurance tooling such as PoliCheck, FxCop and APIScan and modifying the build process to include these.
-					<br>• Modifying and creating new work items for optimising bug reporting and flow in Team Foundation Server.
-					<br>• Creating an automation test plan for a new project detailing aspects of the software that would benefit most from automation.
-					<br>• Setting up and configuring a Jenkins continuous integration server including writing build scripts, configuring a email alert with new builds and including tooling automation for QA purposes.
-					<br>• Working to decouple an in-house created software solution so that it could be used by other studios.</p>
-				</div><!-- col-lg-3 -->
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Sentiment Analysis, Product Rating Web Application (C#)</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe src="//player.vimeo.com/video/175862621"></iframe>
+                                                </div>
+                                                <br>
+                                                <p>A web application that provides users a way to find out what the world thinks of a particular product/person/service/event using Twitter Sentiment Analysis. It the takes this data and transforms it into an enhanced graphical experience for the user focusing on Human Computer Interaction to maximise this experience.</p>
+                                            </div>
+                                        </div>
 
-				<div class="col-md-4">
-					<p></p>
-					<img class="img" src="assets/img/work/microsoft.jpg" height="240px" width="240px" alt="">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8">
-					<br>
-					<h4><b>Lead Ambassador</b></h4>
-					<p>• Representing the School of Computer Science/University of Birmingham.
-					<br>Visitors including potential students, parents or any professional bodies saw me as a representative
-					of the university; I conducted tours and presentations to the potential students and guests about the
-					University.<br>
-					• Organisation and management of other ambassadors
-					<br>After working as a student ambassador for half a year I was then asked to become the head student
-					ambassador for the School of Computer Science by the Admissions and Marketing Coordinator. I
-					played an active part in the planning and organisation of applicant visit days and open days. As
-					well as the organisation of other student ambassadors to ensure the smooth running of the days.
-					<br>
-					• Helping out with any events held at the University of Birmingham.
-					<br>Since my time as a Student Ambassador I worked at many different events such as: Computing at
-					School Conference, university open days, applicant visit days and also workshops held in
-					Computer Science for secondary school pupils.</p>
-				</div><!-- col-lg-3 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="" data-toggle="modal" data-target="#portfolioModal-2">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                                <!-- Modal -->
+                                <div id="portfolioModal-2" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
 
-				<div class="col-md-4">
-					<p></p>
-					<img class="img" src="assets/img/work/ambassador.jpg" height="240px" width="240px" alt="">
-				</div>
-			</div>
-			<div class="row">
-			<div class="col-md-6">
-				<div class="row">
-				<div class="col-md-8">
-					<br>
-					<h4><b>Java Demonstrator</b></h4>
-					<p>• Helping university students develop code for their Java module.
-					<br>Based in the Computer Science labs at the university, when a student needed advice/help with
-					their Java code, I would teach them the fundamentals of what they were attempting and guide
-					them along the right path.</p>
-				</div><!-- col-lg-3 -->
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Multiplayer Tower Defence Game (Java)</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>As part of my Team Project module during second year, I worked in a team of five to create a multiplayer game that was both competitive and cooperative. We came up with the idea of a multiplayer tower defence game.</p>
+                                                <p>My specific job in this project was to create a dedicated map editor using OpenGL and I also worked in a pair to create the Artificial Intelligence.</p>
+                                                <p>After we had completed a mock sales pitch to the lecturers running the course and also a representative from IBM we were awarded the IBM University Team Challenge for our teamwork through the project.</p>
+                                            </div>
+                                        </div>
 
-				<div class="col-md-4">
-					<p></p>
-					<img class="img" src="assets/img/work/java.jpg" height="120px" width="120px" alt="">
-				</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="row">
-				<div class="col-md-8">
-					<br>
-					<h4><b>Vice President (CSS)</b></h4>
-					<p>• Liaised with technology bodies in order to bring careers advice to the members of the
-					Computer Science Society.
-					<br>
-					• Worked in a close committee, organising social events and assisting the President with the
-					delegation of duties and other responsibilities</p>
-				</div><!-- col-lg-3 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
-				<div class="col-md-4">
-					<p></p>
-					<img class="img" src="assets/img/work/css.jpg" height="120px" width="120px" alt="">
-				</div>
-				</div>
-			</div>
-			</div>
-		</div><!-- container -->
-		
-		<!-- ==== SECTION DIVIDER3 -->
-		<section class="section-divider textdivider divider3">
-			<div class="container">
-				<h1>I LOVE BEING CREATIVE</h1>
-				<hr>
-				<p>I love being creative and tunneling my creativity into projects including: software, art and photography.</p>
-			</div><!-- container -->
-		</section><!-- section -->
-		
-		<!-- ==== PROJECTS ==== -->
-		<div class="container" id="projects" name="projects">
-		<br>
-			<div class="row">
-				<br>
-				<h1 class="centered">WHAT HAVE I DEVELOPED?</h1>
-				<hr>
-				<br>
-				<br>
-			</div><!-- /row -->
-			<div class="container">
-			<div class="row">	
-			
-				<!-- PORTFOLIO IMAGE 1 -->
-				<div class="col-md-4 ">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt="">
-							<figcaption>
-								<h5>TOWER DEFENCE GAME</h5>
-								<a data-toggle="modal" href="#modal01" class="btn btn-primary btn-lg">Details</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-						  <div class="modal fade" id="modal01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Multiplayer Tower Defence Game</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>
-						          <p>As part of my Team Project module during second year, I worked in a team of five to create a multiplayer game that was both competitive and cooperative. We came up with the idea of a multiplayer tower defence game.</p>
-						          <p>My specific job in this project was to create a dedicated map editor using OpenGL and I also worked in a pair to create the Artificial Intelligence.</p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div><!-- /.modal -->
-				
-				<!-- PORTFOLIO IMAGE 2 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio02.jpg" alt="">
-							<figcaption>
-								<h5>EMAIL SERVLET</h5>
-								<a data-toggle="modal" href="#modal02" class="btn btn-primary btn-lg">Details</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
+    <!-- Call to Action -->
+    <aside id="contact" class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Want to find out more about me?</h3>
+                    <a href="https://uk.linkedin.com/in/lukewcross" class="btn btn-lg btn-light">My Experience</a>
+                    <a href="https://github.com/LukeCross" class="btn btn-lg btn-dark">My Code</a>
+                </div>
+            </div>
+        </div>
+    </aside>
 
-				<div class="modal fade" id="modal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Email Servlet</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/folio02.jpg" alt=""></p>
-						          <p>The idea of this simple Java servlet is that the user can log into their GMail account and send an email. The reason as to why I developed this was because of my networking module that required an online servlet that is capable of sending emails.</p>
-						          <p>I used the Twitter Bootstrap framework to create the simple form.</p>
-						          <p><b><a href="https://github.com/LukeCross/syp/tree/master/SSCServlet">Visit Source Code</a></b></p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div><!-- /.modal -->
-				
-				<!-- PORTFOLIO IMAGE 3 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio03.jpg" alt="">
-							<figcaption>
-								<h5>EMAIL CLIENT</h5>
-								<a data-toggle="modal" href="#modal03" class="btn btn-primary btn-lg">Details</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-			</div><!-- /row -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://uk.linkedin.com/in/lukewcross"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/LukeCross"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/LukeWCross"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/lukewcross/"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Luke Cross 2016</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
 
-			<div class="modal fade" id="modal03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Email Client</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/folio03.jpg" alt=""></p>
-						          <p>This is a particular piece of software that I have developed over several stages. First off I created the GUI for part of a module I was taking at university. Then I added the Email functionality using the JavaMail API. After this I added multi-threading to the application to allow it to load faster and check for email in the background.</p>
-						          <p><b><a href="https://github.com/LukeCross/syp/tree/master/SSCThreads/src">Visit Source Code</a></b></p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div><!-- /.modal -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-				<!-- PORTFOLIO IMAGE 4 -->
-			<div class="row">	
-				<div class="col-md-4 ">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio04.jpg" alt="">
-							<figcaption>
-								<h5>SIMPLE WEBSITE</h5>
-								<a data-toggle="modal" href="#modal04" class="btn btn-primary btn-lg">Details</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-				<div class="modal fade" id="modal04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Simple Website</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/folio04.jpg" alt=""></p>
-						          <p>As part of my first year studying Computer Science I was put in a team to create a website using XML, AJAX, CSS, HTML and Javascipt. This website needed to educate the viewer on the reason behind creating good passwords and the consequences of not.</p>
-						          <p>I was in a team of three and my role was the coding of the website itself, with other team members finding the relevant images and content to be added into the framework.</p>
-						          <p><b><a href="https://github.com/LukeCross/fyp/tree/master/FYP%20Website">Visit Source Code</a></b></p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div><!-- /.modal -->
-				
-				<!-- PORTFOLIO IMAGE 5 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio05.jpg" alt="">
-							<figcaption>
-								<h5>FALLING BLOCK GAME</h5>
-								<a data-toggle="modal" href="#modal05" class="btn btn-primary btn-lg">Details</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    </script>
 
-				<div class="modal fade" id="modal05" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Falling Block Game</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/folio05.jpg" alt=""></p>
-						          <p>At the end of my first year at university, I was asked to create a simple block falling game for my module Software Workshop in Java. The idea of this game is to hit SPACE when the colour of the falling block lines up with one below. The game ends when the board is cleared. However miss a block and the bottom will raise by one.</p>
-						          <p><b><a href="https://github.com/LukeCross/fyp/tree/master/FYP/ex8">Visit Source Code</a></b></p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div><!-- /.modal -->
-				
-				<!-- PORTFOLIO IMAGE 6 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio06.jpg" alt="">
-							<figcaption>
-								<h5>DRAWING PANEL</h5>
-								<a data-toggle="modal" href="#modal06" class="btn btn-primary btn-lg">Details</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
+</body>
 
-				<div class="modal fade" id="modal06" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Drawing Panel</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/folio06.jpg" alt=""></p>
-						          <p>This was one of my last Java projects of my first year at university. It allows the user to choose a variety of shapes and colours and draw them onto the screen. I went beyond the scope of the exercise and decided to add the ability to save and load the drawing.</p>
-						          <p><b><a href="https://github.com/LukeCross/fyp/tree/master/FYP/ex7">Visit Source Code</a></b></p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div><!-- /.modal -->
-
-			</div><!-- /row -->
-			<br>
-			<br>
-		</div><!-- /row -->
-	</div><!-- /container -->
-		
-		<div class="container" id="contact" name="contact">
-			<div class="row">
-				<hr>
-			<br>
-				<div class="col-md-4">
-					<h3>Contact Information</h3>
-					<p>
-					<span class="icon icon-envelop"></span> <a href="mailto:lukecross@live.co.uk"> Email Me</a> <br/>
-					<span class="icon icon-github"></span> <a target="_blank" href="http://github.com/lukecross"> Github</a> <br/>
-					<span class="icon icon-link"></span> <a target="_blank" href="https://uk.linkedin.com/in/lukewcross"> LinkedIn</a> <br/>
-					<span class="icon icon-twitter"></span> <a target="_blank" href="http://www.twitter.com/lukewcross"> Twitter </a> <br/>
-					</p>
-				</div><!-- col -->
-				
-				<div class="col-md-8">
-					<h3>Support Me</h3>
-					<p>Noticed something spelt wrong, something doesn't quite read right. Or if you just want to drop me an email, tweet etc then go ahead! I'm constantly looking for feedback to try and develop this site as well as I can!</p>
-				</div><!-- col -->
-
-			</div><!-- row -->
-		
-		</div><!-- container -->
-
-		<div id="footerwrap">
-			<div class="container">
-				<h4>Theme Created by <a href="http://blacktie.co">BlackTie.co</a>. Modified by Luke Cross - Copyright 2015</h4>
-			</div>
-		</div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-		
-
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/retina.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
-	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
-  </body>
 </html>
