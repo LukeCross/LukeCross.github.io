@@ -1,4 +1,10 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/)
+# Luke Cross - Website Portfolio
+
+This website was modified by Luke Cross in order to showcase his projects and technical skills. The creator of the template is listed below.
+
+This website uses photos from [Death to the Stock Photo](http://deathtothestockphoto.com/) under the [Photograph end user license](http://deathtostock.wpengine.com/wp-content/uploads/Death-to-the-Stock-Photo-Photograph-End-User-License-8-2015.pdf).
+
+## [Start Bootstrap](http://startbootstrap.com/) - [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/)
 
 ## Creator
 
