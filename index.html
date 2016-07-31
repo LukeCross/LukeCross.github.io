@@ -394,6 +394,14 @@
             }
         }
     });
+        
+    // Stop video playing when modals are closed
+    $('#portfolioModal-1').on('hidden.bs.modal', function () {
+        $('#portfolioModal-1 iframe').attr('src', $('#portfolioModal-1 iframe').attr('src'));
+    });
+    $('#portfolioModal-2').on('hidden.bs.modal', function () {
+        $('#portfolioModal-2 iframe').attr('src', $('#portfolioModal-2 iframe').attr('src'));
+    });
     </script>
 
 </body>
