@@ -1,385 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A Portfolio website for Luke Cross showcasing his projects, skills and means of contact.">
-    <meta name="author" content="Luke Cross">
-
-    <title>Luke Cross | Software Engineer</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type='image/x-icon'/ >
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$ ( "#menu-close").click();>Luke Cross</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$ ( "#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$ ( "#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#skills" onclick=$ ( "#menu-close").click();>Skills</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$ ( "#menu-close").click();>Projects</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$ ( "#menu-close").click();>Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Luke Cross</h1>
-            <h3>Software Engineer</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Who am I?</a>
-        </div>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>University of Birmingham, Computer Science Graduate.</h2>
-                    <p class="lead">Graduated class of 2016 with a First Class Honours Degree in Computer Science with Year in Industry BSc.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="skills bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Technical Skills</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <div class="skill-item">
-                                <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-coffee fa-stack-1x text-primary"></i>
-                                </span>
-                                <h4>
-                                    <strong>Java</strong>
-                                </h4>
-                                <p>3 Years Experience</p>
-                                <div class="progress">
-		                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-		                        </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="skill-item">
-                                <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-terminal fa-stack-1x text-primary"></i>
-                                </span>
-                                <h4>
-                                    <strong>Angular 4</strong>
-                                </h4>
-                                <p>1 Year Experience</p>
-                                <div class="progress">
-		                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-		                        </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="skill-item">
-                                <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-code fa-stack-1x text-primary"></i>
-                                </span>
-                                <h4>
-                                    <strong>C# ASP.NET MVC</strong>
-                                </h4>
-                                <p>1 Year Experience</p>
-                                <div class="progress">
-		                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-		                        </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <p class="lead">Jenkins, Selenium, Atlassian Stack, Visual Studio, Git, Microsoft Office, AWS, Balsamiq, Elasticsearch</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>My Projects</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="" data-toggle="modal" data-target="#portfolioModal-1">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                                <!-- Modal -->
-                                <div id="portfolioModal-1" class="modal fade" role="dialog">
-                                    <div class="modal-dialog">
-
-                                        <!-- Modal content-->
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Sentiment Analysis, Product Rating Web Application (C#)</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/175862621" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-<p><a href="https://vimeo.com/175862621">Opminr - Demonstration</a> from <a href="https://vimeo.com/user54658799">Luke Cross</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                                                <br>
-                                                <p>Opminr is a sentiment analysis engine that was built as my final year University Computer Science project.</p>
-                                                <p>It works by connecting to Twitter to gather Tweets which contain the user's input, performing sentiment analysis on the Tweets to mark them as <span class="text-success"><u>positive</u></span>, <span class="text-danger"><u>negative</u></span> or <span class="text-warning"><u>neutral</u></span>, analysing this data to provide the user with a rating out of 5 stars as well as lots of other useful information.</p>
-                                                <p>My final dissertation can be found in a .PDF file <a target="_blank" href="files/Project%20Report%20-%20Luke%20Cross.pdf">here</a>.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="" data-toggle="modal" data-target="#portfolioModal-2">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                                <!-- Modal -->
-                                <div id="portfolioModal-2" class="modal fade" role="dialog">
-                                    <div class="modal-dialog">
-
-                                        <!-- Modal content-->
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Multiplayer Tower Defence Game (Java)</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div style="padding:64.06% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/176184553" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-<p><a href="https://vimeo.com/176184553">Kingdom Kerfuffle - Demonstration</a> from <a href="https://vimeo.com/user54658799">Luke Cross</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                                                <br>
-                                                <p>As part of my Team Project module during second year, I worked in a team of five to create a multiplayer game that was both competitive and cooperative. We came up with the idea of a multiplayer tower defence game.</p>
-                                                <p>My specific job in this project was to create a dedicated map editor using OpenGL and I also worked in a pair to create the Artificial Intelligence.</p>
-                                                <p>After we had completed a mock sales pitch to the lecturers running the course and also a representative from IBM we were awarded the IBM University Team Challenge for our teamwork through the project.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="" data-toggle="modal" data-target="#portfolioModal-3">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                                <!-- Modal -->
-                                <div id="portfolioModal-3" class="modal fade" role="dialog">
-                                    <div class="modal-dialog">
-
-                                        <!-- Modal content-->
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Work Management Application Design (Balsamiq)</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img class="img-responsive" src="img/portfolio-3.jpg">
-                                                <br>
-                                                <p>As part of my Human Computer Interaction module in my final year of university, I had to design and mock up an application that could be used to manage a student's time effectively. With this I came up with two designs: one with a timer based element and the other with a button based element.</p>
-                                                <p>The designs can be found in a .PDF file <a target="_blank" href="files/Application%20Design%20-%20Luke%20Cross.pdf">here</a>.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="" data-toggle="modal" data-target="#portfolioModal-4">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                                <!-- Modal -->
-                                <div id="portfolioModal-4" class="modal fade" role="dialog">
-                                    <div class="modal-dialog">
-
-                                        <!-- Modal content-->
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Multi-threaded GMail Client (Java)</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img class="img-responsive" src="img/portfolio-4.jpg">
-                                                <br>
-                                                <p>Using the JavaMail API, I created a simple, multi-threaded GMail client. This features sending and receiving e-mail from a logged in account. This was completed as part of my second year Java module.</p>
-                                                <p>The code for this project can be found <a target="_blank" href="https://github.com/LukeCross/syp/tree/master/SSCThreads/src">here</a>.</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <aside id="contact" class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>Want to find out more about me?</h3>
-                    <a target="_blank" href="https://uk.linkedin.com/in/lukewcross" class="btn btn-lg btn-light">My Experience</a>
-                    <a target="_blank" href="https://github.com/LukeCross" class="btn btn-lg btn-dark">My Code</a>
-                    <a target="_blank" href="files/Luke%20Cross%20(No%20Phone).pdf" class="btn btn-lg btn-light">My CV</a>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <ul class="list-inline">
-                        <li>
-                            <a target="_blank" href="https://uk.linkedin.com/in/lukewcross"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/LukeCross"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://twitter.com/LukeWCross"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.instagram.com/lukewcross/"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Luke Cross 2018</p>
-                </div>
-            </div>
-        </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Luke Cross | Software Engineer</title>
         
-    // Stop video playing when modals are closed
-    $('#portfolioModal-1').on('hidden.bs.modal', function () {
-        $('#portfolioModal-1 iframe').attr('src', $('#portfolioModal-1 iframe').attr('src'));
-    });
-    $('#portfolioModal-2').on('hidden.bs.modal', function () {
-        $('#portfolioModal-2 iframe').attr('src', $('#portfolioModal-2 iframe').attr('src'));
-    });
-    </script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico" type='image/x-icon'/ >
+        
+	</head>
+	<body class="is-preload">
 
-</body>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Luke Cross</h1>
+							<p>Software Engineer</p>
+						</header>
+						
+						<footer>
+							<ul class="icons">
+								<li><a href="https://uk.linkedin.com/in/lukewcross" target="_blank" class="fa-linkedin">Experience</a></li>
+								<li><a href="https://github.com/LukeCross" target="_blank" class="fa-github">Code</a></li>
+								<li><a href="https://vimeo.com/user54658799" target="_blank" class="fa-vimeo">Projects</a></li>
+                                <li><a href="files/Luke%20Cross.pdf" target="_blank" class="fa-download">CV</a></li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Luke Cross</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
 </html>
