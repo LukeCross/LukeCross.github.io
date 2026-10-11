@@ -1,60 +1,155 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Luke Cross | Tech Lead Manager</title>
-        
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        
-        <!-- Favicon -->
-        <link rel="icon" href="favicon.ico" type='image/x-icon'/ >
-        
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luke Cross | Engineering Manager</title>
+	<meta name="description" content="Luke Cross is an Engineering Manager who leads engineering teams, and makes tiny, cosy games on the side.">
+	<meta name="theme-color" content="#f6ecdc">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap">
+	<link rel="stylesheet" href="style.css">
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h1>Luke Cross</h1>
-							<p>Tech Lead Manager</p>
-						</header>
-						
-						<footer>
-							<ul class="icons">
-								<li><a href="https://uk.linkedin.com/in/lukewcross" target="_blank" class="fa-linkedin">Experience</a></li>
-                                <li><a href="files/Luke%20Cross.pdf" target="_blank" class="fa-download">CV</a></li>
-							</ul>
-						</footer>
-					</section>
+	<!-- Set the theme before first paint to avoid a flash -->
+	<script>
+		(function () {
+			var saved = null;
+			try { saved = localStorage.getItem('theme'); } catch (e) {}
+			var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+			document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+		})();
+	</script>
+</head>
+<body>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Luke Cross</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+	<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+		<svg class="lamp" viewBox="0 0 48 48" aria-hidden="true">
+			<path class="lamp-glow" d="M10 30 L38 30 L46 46 L2 46 Z"/>
+			<path class="lamp-shade" d="M14 10 Q24 2 34 10 L38 28 L10 28 Z"/>
+			<rect class="lamp-stem" x="22" y="28" width="4" height="12"/>
+			<rect class="lamp-base" x="14" y="40" width="20" height="5" rx="2.5"/>
+		</svg>
+	</button>
 
+	<main class="page">
+
+		<!-- Hero -->
+		<header class="hero">
+			<div class="portrait">
+				<svg class="avatar" viewBox="0 0 200 200" role="img" aria-label="Illustration of Luke: short hair, ginger beard, white tee with sage suspenders and a gold chain">
+					<defs><clipPath id="avatar-clip"><circle cx="100" cy="100" r="96"/></clipPath></defs>
+					<circle class="av-bg" cx="100" cy="100" r="96"/>
+					<g clip-path="url(#avatar-clip)">
+						<!-- shirt -->
+						<path d="M24 205 Q28 150 78 143 L122 143 Q172 150 176 205 Z" fill="#fbf4e6"/>
+						<!-- neck -->
+						<path d="M86 118 L114 118 L116 146 Q100 158 84 146 Z" fill="#e9b793"/>
+						<!-- suspenders -->
+						<path d="M58 152 L72 148 L80 205 L62 205 Z" fill="#9db39a"/>
+						<path d="M142 152 L128 148 L120 205 L138 205 Z" fill="#9db39a"/>
+						<!-- chain -->
+						<path d="M84 148 Q100 184 116 148" fill="none" stroke="#e2b04a" stroke-width="2.5" stroke-linecap="round"/>
+						<!-- ears -->
+						<ellipse cx="61" cy="88" rx="5.5" ry="9" fill="#efc09c"/>
+						<ellipse cx="139" cy="88" rx="5.5" ry="9" fill="#efc09c"/>
+						<!-- head -->
+						<ellipse cx="100" cy="82" rx="39" ry="45" fill="#f4c9a8"/>
+						<!-- buzzed hair -->
+						<path d="M62 76 Q60 38 100 36 Q140 38 138 76 Q132 56 100 54 Q68 56 62 76 Z" fill="#c9a074"/>
+						<!-- beard -->
+						<path d="M61 88 Q60 140 100 140 Q140 140 139 88 Q133 112 118 112 Q100 104 82 112 Q67 112 61 88 Z" fill="#b8582b"/>
+						<!-- cheeks -->
+						<ellipse cx="76" cy="98" rx="7" ry="4" fill="#f09a86" opacity=".45"/>
+						<ellipse cx="124" cy="98" rx="7" ry="4" fill="#f09a86" opacity=".45"/>
+						<!-- mouth -->
+						<path d="M91 121 Q100 128 109 121" fill="none" stroke="#6b2f1a" stroke-width="2.6" stroke-linecap="round"/>
+						<!-- nose -->
+						<path d="M97 90 Q100 101 104 97" fill="none" stroke="#d79a76" stroke-width="2.2" stroke-linecap="round"/>
+						<!-- eyes + brows -->
+						<circle cx="85" cy="82" r="3.4" fill="#2f2850"/>
+						<circle cx="115" cy="82" r="3.4" fill="#2f2850"/>
+						<circle cx="86" cy="80.8" r="1.1" fill="#fff"/>
+						<circle cx="116" cy="80.8" r="1.1" fill="#fff"/>
+						<path d="M77 72 Q85 67 93 71" fill="none" stroke="#a9744b" stroke-width="3" stroke-linecap="round"/>
+						<path d="M107 71 Q115 67 123 72" fill="none" stroke="#a9744b" stroke-width="3" stroke-linecap="round"/>
+					</g>
+				</svg>
+
+				<svg class="bowl" viewBox="0 0 64 50" aria-hidden="true">
+					<path class="bowl-body" d="M4 20 L60 20 Q58 46 32 46 Q6 46 4 20 Z"/>
+					<ellipse class="bowl-milk" cx="32" cy="20" rx="28" ry="7"/>
+					<g class="hoops">
+						<ellipse class="hoop h1" cx="19" cy="20" rx="4" ry="2.2"/>
+						<ellipse class="hoop h2" cx="30" cy="22" rx="4" ry="2.2"/>
+						<ellipse class="hoop h3" cx="42" cy="20.5" rx="4" ry="2.2"/>
+						<ellipse class="hoop h4" cx="26" cy="18" rx="4" ry="2.2"/>
+						<ellipse class="hoop h5" cx="37" cy="17.8" rx="4" ry="2.2"/>
+					</g>
+					<g class="spoon">
+						<path class="spoon-handle-outline" d="M35 19 L57 3"/>
+						<path class="spoon-handle" d="M35 19 L57 3"/>
+						<ellipse class="spoon-head" cx="33.5" cy="20" rx="5" ry="3.2" transform="rotate(-36 33.5 20)"/>
+					</g>
+				</svg>
+				</div>
 			</div>
 
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
+			<h1>Luke Cross</h1>
+			<p class="role">Engineering Manager</p>
+			<p class="tagline">I lead engineering teams and care about building great software with great people. I also make tiny, cosy games on the side.</p>
 
-	</body>
+			<ul class="links">
+				<li>
+					<a class="btn btn-primary" href="https://uk.linkedin.com/in/lukewcross" target="_blank" rel="noopener">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.54h.05c.53-1 1.82-1.84 3.75-1.84 4 0 4.75 2.5 4.75 5.76V21h-4v-5.1c0-1.22-.02-2.78-1.8-2.78-1.8 0-2.07 1.3-2.07 2.69V21h-4V9.75Z"/></svg>
+						LinkedIn
+					</a>
+				</li>
+				<li>
+					<a class="btn" href="files/Luke%20Cross.pdf" target="_blank" rel="noopener" download>
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1ZM5 19h14a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2Z"/></svg>
+						Download CV
+					</a>
+				</li>
+			</ul>
+		</header>
 
+		<!-- Games (side projects) -->
+		<section class="games" aria-labelledby="games-title">
+			<h2 id="games-title">Games I'm making on the side</h2>
+
+			<ul class="game-list">
+				<li>
+					<a class="game" href="https://blorbit.io" target="_blank" rel="noopener">
+						<img src="images/games/blorbit-icon.png" alt="" width="44" height="44" loading="lazy">
+						<span class="game-text">
+							<span class="game-title">Blorbit</span>
+							<span class="game-blurb">A cosy browser game about bringing tiny planets back to life.</span>
+						</span>
+						<span class="game-arrow" aria-hidden="true">&#8599;</span>
+					</a>
+				</li>
+				<li>
+					<div class="game game-empty">
+						<span class="game-q" aria-hidden="true">?</span>
+						<span class="game-text">
+							<span class="game-title">Still fermenting</span>
+							<span class="game-blurb">More on the way.</span>
+						</span>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<footer class="footer">
+			<p>&copy; <span id="year">2026</span> Luke Cross &middot; Made with a bowl of cereal</p>
+		</footer>
+
+	</main>
+
+	<script src="script.js"></script>
+</body>
 </html>
